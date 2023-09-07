@@ -2,37 +2,130 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  border: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #2c3e50 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#msg {
+  color: #c0392b;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+#msg span:first-child {
+  margin-right: 10px;
+}
+
+input {
+  border: 1px solid #2c3e50 !important;
+}
+
+.table-row {
+  cursor: pointer !important;
+  transition: all 0.3s ease-in;
+}
+
+.table-row:hover {
+  background-color: #c5c1c1;
+  color: black;
+  transform: translateX(4px);
+  overflow: hidden;
+}
+
+.role {
+  text-transform: capitalize;
+}
+
+#actions button {
+  background-color: transparent;
+  border: 0;
+}
+
+.selected {
+  background-color: rgb(161, 159, 159);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#actions button:first-child {
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#actions button:last-child {
+  color: #c0392b !important;
+}
+
+tr:hover td span i,
+.selected td span i {
+  color: white !important;
+}
+
+.align-left {
+  float: left;
+}
+
+#deleteAll span:last-child {
+  margin-left: 10px;
+}
+
+#deleteAll {
+  transition: all 0.3s ease-in-out;
+}
+
+#deleteAll.active {
+  border: 1px solid #c0392b;
+  color: white;
+  background-color: rgb(238, 102, 102);
+}
+
+#deleteAll.active:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+#deleteAll.disabled {
+  border: 1px solid #2c3e50;
+  color: #2c3e50;
+}
+.theme {
+  background: linear-gradient(to left, blue, blue);
+  padding-left: 20px;
+  font-size: bold;
+}
+
+#no_data h5 {
+  color: #f39c12;
+  font-size: 35px;
+}
+
+#no_data h5 span {
+  margin-left: 5px;
+}
+
+.page-link:hover {
+  background-color: #0d6dfdc4;
+  color: white;
+}
+
+.page-item.active {
+  background-color: #0d6efd !important;
+}
+
+.full-width {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.full-width:hover {
+  background: linear-gradient(to left, #2676ac, #2a81ba);
 }
